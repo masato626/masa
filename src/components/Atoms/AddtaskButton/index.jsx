@@ -21,13 +21,15 @@ const StyledShadow = styled.div`
   position: absolute;
   width: 100%; /* ボタン全体の幅に合わせる */
   height: 100%;
+  top: 0px;
+  left: 0px;
 `;
 const StyledAddTaskButton = styled.div`
   display: flex;
   position: relative;
   padding: 2px 6px;
-  width: 126px;
-  left: 24px;
+  width: 114px;
+  height: 20px;
 
   & > ${StyledShadow} {
     opacity: 0; /* 初期状態では見えない */
@@ -40,6 +42,7 @@ const StyledAddTaskButton = styled.div`
   }
 `;
 const StyledText = styled.div`
+  padding: 0px;
   display: flex;
   align-items: center;
   margin-left: 10px;
